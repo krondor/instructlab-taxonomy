@@ -1,0 +1,34 @@
+---
+version: 1
+task_description: "Teach the model the watsonx software requirements"
+created_by: ryan.kather
+domain: technical_documentation
+seed_examples:
+  - question: Can storage nodes coexist with worker nodes? 
+    answer: |
+      Yes, in the case of OpenShift Data Foundation (ODF), and in the 
+      case of IBM Spectrum Fusion, storage nodes can coexist with worker nodes.
+  - question: What Kubernetes flavor is supported by watsonx?
+    answer: |
+      watsonx and Cloud Pak for Data supports Red Hat® OpenShift® Container
+      Platform.
+  - question: What browser versions are supported for use by clients?
+    answer: |
+      You can use the following web browsers to access the Cloud Pak for Data
+      web client.
+
+          Mozilla Firefox (recommended)
+          Google Chrome
+          Microsoft Edge
+
+      It is recommended that you use the latest available version or the latest
+      version approved by your enterprise.
+  - question: How much storage is required in the private container registry?
+    answer: |
+      If you require a private container registry, expect to need at 
+      least 500 GB of storage for container image persistence.  
+document:
+  repo: git@github.com:krondor/instructlab_taxonomy_watsonx.git 
+  commit: 9db1556
+  patterns:
+    - '*.md'
